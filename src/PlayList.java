@@ -2,21 +2,25 @@ import java.util.ArrayList;
 
 public class PlayList {
     // class to create a dessert island play list
-    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+    ArrayList<String> playlist = new ArrayList<String>();
 
     public PlayList() {
 
     }
 
     public ArrayList getPlayList() {
-        return desertIslandPlaylist;
+        return playlist;
     }
 
     public void addToPlaylist(String[] list) {
         for (String song : list) {
-            desertIslandPlaylist.add(song);
+            playlist.add(song);
             System.out.println(song + " was added to playlist");
         }
+    }
+
+    public int getPlaylistSize() {
+        return playlist.size();
     }
 
 
@@ -50,12 +54,13 @@ public class PlayList {
 
         String[] songsList = { "Cochise", "Jeremy", "Freedom", "Soulbound", "Greatest Show on Earth", "Holy War", "Rainbow in the Dark"};
 
-        PlayList playlist = new PlayList();
-        System.out.println(playlist.getPlayList());
-        playlist.addToPlaylist(songsList);
-        System.out.println(playlist.getPlayList());
+        PlayList desertIslandPlaylist = new PlayList();
+        System.out.println(desertIslandPlaylist.getPlayList());
+        desertIslandPlaylist.addToPlaylist(songsList);
+        System.out.println(desertIslandPlaylist.getPlayList());
         String[] new_songs = {"Devil and I", "Abyss"};
-        playlist.addToPlaylist(new_songs);
-        System.out.println(playlist.getPlayList());
+        desertIslandPlaylist.addToPlaylist(new_songs);
+        System.out.println(desertIslandPlaylist.getPlayList());
+        System.out.println(desertIslandPlaylist.getPlaylistSize());
     }
 }
