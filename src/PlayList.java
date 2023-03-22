@@ -4,12 +4,19 @@ public class PlayList {
     // class to create a dessert island play list
     ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
 
-    public PlayList(ArrayList<String> playlist) {
-        desertIslandPlaylist = playlist;
+    public PlayList() {
+
     }
 
     public ArrayList getPlayList() {
         return desertIslandPlaylist;
+    }
+
+    public void addToPlaylist(String[] list) {
+        for (String song : list) {
+            desertIslandPlaylist.add(song);
+            System.out.println(song + " was added to playlist");
+        }
     }
 
 
@@ -40,13 +47,15 @@ public class PlayList {
 //        desertIslandPlaylist.set(b, "Holy War");
 //        System.out.println(desertIslandPlaylist);
 
-        ArrayList<String> songs = new ArrayList<String>();
+
         String[] songsList = { "Cochise", "Jeremy", "Freedom", "Soulbound", "Greatest Show on Earth", "Holy War", "Rainbow in the Dark"};
-        for (String song : songsList) {
-            songs.add(song);
-        }
-//        System.out.println(songs);
-        PlayList playlist = new PlayList(songs);
+
+        PlayList playlist = new PlayList();
+        System.out.println(playlist.getPlayList());
+        playlist.addToPlaylist(songsList);
+        System.out.println(playlist.getPlayList());
+        String[] new_songs = {"Devil and I", "Abyss"};
+        playlist.addToPlaylist(new_songs);
         System.out.println(playlist.getPlayList());
     }
 }
