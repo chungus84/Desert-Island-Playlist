@@ -11,5 +11,7 @@ public class PlayList {
         desertIslandPlaylist.add("Greatest Show on Earth");
         desertIslandPlaylist.add("Holy War");
         desertIslandPlaylist.add("Rainbow in the Dark");
+
+        System.out.println(desertIslandPlaylist);
     }
 }
