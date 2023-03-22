@@ -13,5 +13,6 @@ public class PlayList {
         desertIslandPlaylist.add("Rainbow in the Dark");
 
         System.out.println(desertIslandPlaylist);
+        System.out.println(desertIslandPlaylist.size());
     }
 }
