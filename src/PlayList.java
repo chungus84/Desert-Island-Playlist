@@ -20,5 +20,12 @@ public class PlayList {
         desertIslandPlaylist.remove("Jeremy");
         System.out.println(desertIslandPlaylist.size());
         System.out.println(desertIslandPlaylist);
+
+        int a = desertIslandPlaylist.indexOf("Cochise");
+        int b = desertIslandPlaylist.indexOf("Rainbow in the Dark");
+
+        desertIslandPlaylist.set(a, "Jeremy");
+        desertIslandPlaylist.set(b, "Holy War");
+        System.out.println(desertIslandPlaylist);
     }
 }
