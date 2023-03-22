@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class PlayList {
     // class to create a dessert island play list
+    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+
     public static void main(String[] args) {
         ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
         desertIslandPlaylist.add("Cochise");
