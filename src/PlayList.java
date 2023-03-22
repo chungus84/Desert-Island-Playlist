@@ -23,6 +23,15 @@ public class PlayList {
         return playlist.size();
     }
 
+    public void removeFromPlaylist(String songToRemove) {
+        if (playlist.contains(songToRemove)) {
+            System.out.println(songToRemove + " has been removed from playlist");
+            playlist.remove(songToRemove);
+        } else {
+            System.out.println(songToRemove + " is not in this playlist");
+        }
+    }
+
 
 
     public static void main(String[] args) {
@@ -62,5 +71,8 @@ public class PlayList {
         desertIslandPlaylist.addToPlaylist(new_songs);
         System.out.println(desertIslandPlaylist.getPlayList());
         System.out.println(desertIslandPlaylist.getPlaylistSize());
+        desertIslandPlaylist.removeFromPlaylist("Song 2");
+        desertIslandPlaylist.removeFromPlaylist("Jeremy");
+
     }
 }
