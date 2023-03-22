@@ -14,5 +14,11 @@ public class PlayList {
 
         System.out.println(desertIslandPlaylist);
         System.out.println(desertIslandPlaylist.size());
+
+        desertIslandPlaylist.remove(5);
+        System.out.println(desertIslandPlaylist.size());
+        desertIslandPlaylist.remove("Jeremy");
+        System.out.println(desertIslandPlaylist.size());
+        System.out.println(desertIslandPlaylist);
     }
 }
